@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Loader from '../Components/Loader';
 import Sidebar from '../Components/Sidebar';
 import Marque from '../Components/Marque'
+import Navbar from '../Components/Navbar';
 import { motion } from 'framer-motion';
 
 const Home = () => {
@@ -28,13 +29,11 @@ const Home = () => {
             {loading ? (
                 <Loader />
             ) : (
+                <>
                 <main>
+                    <Navbar />
                     <Sidebar />
-                    <section className='h-screen px-20 z-20' style={{ backgroundImage: "radial-gradient(circle at 80% 60%, #0048A1 , transparent 50%)" }}>
-                        <div className='w-fit text-white'>
-                            <img src="" alt="" />
-                            <p className='uppercase text-6xl font-bold'>mukul goyal</p>
-                        </div>
+                    <section className='h-screen px-20 pt-20 z-20' style={{ backgroundImage: "radial-gradient(circle at 80% 60%, #0048A1 , transparent 50%)" }}>
                         <div className='text-white text-5xl font-bold mt-48 w-fit leading-[3rem]'>
                             <p className='tracking-widest'>THE WORLD's 1st SOCIAL</p>
                             <p className='tracking-wider'>CURRENCY CARD</p>
@@ -185,6 +184,7 @@ const Home = () => {
                         </section>
                     </section>
                 </main>
+                </>
             )}
         </>
     );
