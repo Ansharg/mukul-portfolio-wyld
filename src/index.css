@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: black;
+}
+
+main{
+    background-color: black;
+}
+
+.backgroundimage{
+    background: url(./Assests/maskimage.jpeg) repeat;
+    background-attachment: fixed;
+    color: transparent;
+    background-clip: text;
+    background-size: 200px 200px;
+}
+
+
+/* div{
+    border: 1px solid red;
+} */
