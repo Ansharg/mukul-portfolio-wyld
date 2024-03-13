@@ -6,7 +6,7 @@ import Navbar from '../Components/Navbar';
 import { motion } from 'framer-motion';
 
 const Home = () => {
-    const [loading, setLoading] = useState(false);
+    const [loading, setLoading] = useState(true);
     const [scrollPosition, setScrollPosition] = useState(0);
 
     useEffect(() => {
